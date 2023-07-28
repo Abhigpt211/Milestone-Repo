@@ -1,53 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PWSkills Blog</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Search App</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-  <!-- Home Page -->
-  <div class="home-page">
-    <header>
-      <h1>PWSkills Blog</h1>
-      <button id="add-blog-button">+</button>
-    </header>
-    <div id="blog-list"></div>
-  </div>
+    <div>
+        <h1>Movie Search App</h1>
+        <input type="text" id="movieInput" placeholder="Enter movie title">
+        <button id="searchBtn">Search</button>
+        <div id="movieDetails"></div>
 
-  <!-- Blog Page (Modal) -->
-  <div id="blog-page" class="modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <h2 id="modal-title"></h2>
-      <p id="modal-poster"></p>
-      <p id="modal-description"></p>
-      <p id="modal-content"></p>
-    </div>
-  </div>
+        <script src="script.js"></script>
 
-  <!-- Add Blog Modal -->
-  <div id="add-blog-modal" class="modal">
-    <div class="modal-content">
-      <span class="close-button">&times;</span>
-      <form id="add-blog-form">
-        <label for="title">Title:</label>
-        <input type="text" id="title" required>
-        <label for="poster">Poster:</label>
-        <input type="file" id="poster" accept="image/*" required>
-        <div id="image-preview"></div>
-        <label for="description">Description:</label>
-        <textarea id="description" required></textarea>
-        <label for="content">Content:</label>
-        <textarea id="content" required></textarea>
-        <input type="submit" value="Add Blog">
-      </form>
     </div>
-  </div>
-  <script src="script.js"></script>
 </body>
-
 </html>
