@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .home-page {
+    padding: 20px;
+  }
+  
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    margin: 0;
+  }
+  
+  #add-blog-button {
+    font-size: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    max-width: 600px;
+  }
+  
+  .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .close-button:hover,
+  .close-button:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  form input,
+  form textarea {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  form input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Updated CSS for Blog List */
+  .blog-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 300px; /* Adjust card width as per your preference */
+    margin: 10px;
+    display: inline-block; /* Display blog items inline */
+    vertical-align: top; /* Align items at the top of the line */
+  }
+  
+  .blog-item h3 {
+    margin-top: 0;
+  }
+  
+  .blog-item img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    max-height: 150px; /* Set the maximum height of the image */
+  }
